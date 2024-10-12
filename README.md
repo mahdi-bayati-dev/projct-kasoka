@@ -1,4 +1,28 @@
- HEAD
+
+# Kasoka
+
+## 📖 Project Overview
+Kasoka is a targeted project aimed at developing a professional portfolio. This project is designed to assist users in creating and showcasing their portfolios in an attractive and user-friendly manner.
+
+## 🖼️ Project Image
+![Project Screenshot](../projct-kasuka/public/REDMEIMG/Screenshot%202024-10-12%20074649.png)
+
+## ⚙️ Technologies
+This project is developed using the following technologies:
+- [React](https://reactjs.org/)
+- (Any other technologies or libraries you used)
+
+## 🚀 Installation and Setup
+To set up the Kasoka project on your local machine, follow these steps:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/mahdi-bayati-dev/projct-kasoka.git
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,7 +93,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# projct-kasoka
-پروژه ای پیادسازی سایت کاسوکا
->>>>>>> 6438820002603234991b31d56ce0aaa07c6143e1
