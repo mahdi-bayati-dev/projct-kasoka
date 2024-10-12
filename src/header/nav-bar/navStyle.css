@@ -1,0 +1,149 @@
+/* .nav_continuer {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    padding: .5rem 6rem;
+    width: 100vw;
+    position: fixed;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.nav_continuer a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.1s ease-in, border 0.1s ease-in;
+    font-weight: bold;
+}
+
+.btn_nav {
+    border: 2px solid gold;
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
+    color: #fff;
+}
+
+.btn_nav:hover {
+    color: gold;
+}
+
+.ul_menu_heder {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.ul_menu_heder li a {
+    padding: 5px;
+    border: 2px solid transparent;
+}
+
+.ul_menu_heder li a:hover {
+    color: gold;
+    border: 2px solid gold;
+    border-radius: 8px;
+}
+
+.logo {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+
+.logo img {
+    width: 4rem;
+} */
+
+.nav_container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+}
+
+.nav_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo_start {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 3rem;
+    margin-right: 0.5rem;
+}
+
+.btn_nav {
+    border: 2px solid gold;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.1s ease-in, border 0.1s ease-in;
+    font-weight: bold;
+}
+
+.btn_nav:hover {
+    color: gold;
+}
+
+.main_nav {
+    display: flex;
+}
+
+.ul_menu_header {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.ul_menu_header li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    border: 2px solid transparent;
+    transition: color 0.1s ease-in, border 0.1s ease-in;
+    font-weight: bold;
+}
+
+.ul_menu_header li a:hover {
+    color: gold;
+    border: 2px solid gold;
+    border-radius: 8px;
+}
+
+.menu_toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu_toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+

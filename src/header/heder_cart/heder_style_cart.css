@@ -1,0 +1,55 @@
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.cart_container {
+    opacity: 0;
+    animation: slideIn 0.6s ease-out forwards;
+    
+    
+}
+
+.item_cart {
+    width: 11rem;
+    height: 9rem;
+    border: 1px solid grey;
+    padding: 2rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.item_cart:hover {
+    border: 1px solid gold;
+    transition: 0.2s ease-in;
+}
+
+a {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.svg {
+    color: gold;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg svg {
+    width: 100%;
+    height: auto;
+}

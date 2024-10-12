@@ -1,0 +1,144 @@
+
+
+.header-main-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .bgm {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .img-header-main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+  
+  .text_heder_main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    line-height:1.2;
+  }
+  
+  .text_heder_main h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .text_heder_main p {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .text_heder_main p:first-of-type {
+    color: gold;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  
+  .text_heder_main p:last-of-type {
+    color: #fff;
+  }
+
+  .cart{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  @keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.text_heder_main h1,
+.text_heder_main p {
+    opacity: 0;
+    animation: slideDown 0.5s ease-out forwards;
+}
+
+.text_heder_main h1 {
+    animation-delay: 0.2s;
+}
+
+.text_heder_main p:nth-of-type(1) {
+    animation-delay: 0.4s;
+}
+
+.text_heder_main p:nth-of-type(2) {
+    animation-delay: 0.6s;
+}
+--------------
+.text_heder_main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  line-height: 1.2;
+  max-width: 1200px; /* یا هر مقدار دیگری که مناسب طرح شما باشد */
+  padding: 0 20px; /* اضافه کردن padding برای فاصله از لبه‌ها در صفحات کوچک */
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap; /* اجازه می‌دهد کارت‌ها در صفحات کوچکتر به خط بعد بروند */
+}
+
+@media (max-width: 763px) {
+  .cart {
+      gap: 2rem; /* کاهش فاصله بین کارت‌ها در صفحات کوچک */
+  }
+
+  .text_heder_main h1 {
+      font-size: 3rem; /* کاهش اندازه فونت در صفحات کوچک */
+  }
+
+  .text_heder_main p:first-of-type {
+      font-size: 2.5rem;
+  }
+
+  .text_heder_main p {
+      font-size: 1.5rem;
+  }
+}
+
+
+
+
+  
