@@ -1,3 +1,27 @@
+# Kasoka
+
+## 📖 Project Overview
+Kasoka is a targeted project aimed at developing a professional portfolio. This project is designed to assist users in creating and showcasing their portfolios in an attractive and user-friendly manner.
+
+## 🖼️ Project Image
+![Project Screenshot](path/to/your/image.png)
+
+## ⚙️ Technologies
+This project is developed using the following technologies:
+- [React](https://reactjs.org/)
+- (Any other technologies or libraries you used)
+
+## 🚀 Installation and Setup
+To set up the Kasoka project on your local machine, follow these steps:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/mahdi-bayati-dev/projct-kasoka.git
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
