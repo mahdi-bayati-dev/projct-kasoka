@@ -1,11 +1,17 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> f8512dacd6dbe4267c770b48ee367396aa397c61
 # Kasoka
 
 ## 📖 Project Overview
 Kasoka is a targeted project aimed at developing a professional portfolio. This project is designed to assist users in creating and showcasing their portfolios in an attractive and user-friendly manner.
 
 ## 🖼️ Project Image
+<<<<<<< HEAD
 ![Project Screenshot](../projct-kasuka/public/REDMEIMG/Screenshot%202024-10-12%20074649.png)
+=======
+
 
 ## ⚙️ Technologies
 This project is developed using the following technologies:
