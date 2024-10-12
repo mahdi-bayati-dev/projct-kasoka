@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> f8512dacd6dbe4267c770b48ee367396aa397c61
 # Kasoka
 
 ## 📖 Project Overview
