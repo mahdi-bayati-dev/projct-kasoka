@@ -1,28 +1,27 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.about_container{
-    display: flex;
-    justify-content: space-between;
-
-}
-img{
-  width: 100%;
+.about_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.img_about{
-  width: 680px;
-  margin: 5rem;
+img {
+  max-width: 100%;
+  height: auto;
 }
-.about_text{
-  width: 690px;
-  margin-top: 4.5rem ;
-  margin-right: 4rem;
-  font-weight: 500;
-  line-height: 1.8;
+
+.img_about {
+  width: 50%;
+  max-width: 680px;
+  margin: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .about_text {
@@ -31,6 +30,14 @@ img{
   font-weight: 400;
   line-height: 1.6;
   text-align: justify;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out 0.3s, transform 0.6s ease-out 0.3s;
+}
+
+.img_about.animate, .about_text.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about_text h2 {
@@ -59,7 +66,6 @@ img{
   margin-bottom: 0.5rem;
 }
 
-
 @media (max-width: 768px) {
   .about_container {
     flex-direction: column;
@@ -69,10 +75,11 @@ img{
   .about_text {
     width: 100%;
     margin: 1rem 0;
+    padding: 0 1rem;
   }
 
   .img_about {
-    order: -1; /* این باعث می‌شود تصویر بالای متن قرار بگیرد */
+    order: -1;
+    max-width: 100%;
   }
 }
-

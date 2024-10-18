@@ -4,6 +4,7 @@ import HeaderMain from './header/heder_main/heder_main';
 import About from './about/about';
 import Slider from './slider-logo/slider-logo';
 import Features from './features/features';
+import Services from './Services/Services';
 
 
 function App() {
@@ -14,9 +15,7 @@ function App() {
       <About/>
       <Slider/>
       <Features/>
-      
-      
-      
+      <Services/>
 
     </div>
   );

@@ -1,3 +1,4 @@
+
 # Kasoka
 
 ## 📖 Project Overview
@@ -7,7 +8,6 @@ Kasoka is a targeted project aimed at developing a professional portfolio. This 
 
 ![Project Screenshot](./public/REDMEIMG/Screenshot%202024-10-12%20074649.png)
 
-=======
 
 
 ## ⚙️ Technologies
