@@ -1,0 +1,60 @@
+.container_Attraction {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+}
+
+.container_Attraction_bgm {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("/public/att/img_att.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Increase opacity for a darker effect */
+    z-index: -1;
+}
+
+.container_Attraction_bgm h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.container_Attraction_bgm p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+.container_Attraction_bgm button {
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.container_Attraction_bgm button:hover {
+    background-color: #fff;
+    color: #000;
+}

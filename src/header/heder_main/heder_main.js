@@ -48,30 +48,22 @@ function HeaderMain() {
   return (
     <div className="header-main-container">
       <div className="bgm">
-        <img src={process.env.PUBLIC_URL + "/img_heder/Jowhareh_galleries_4_poster_7fb928c9-3be3-449d-9492-b87e7c250c3e.jpeg"} alt="Background" className="img-header-main" />
+        <img src={process.env.PUBLIC_URL + "/img_heder/img_heder.jpeg"} alt="Background" className="img-header-main" />
+        <div className="overlay"></div> {/* انتقال overlay به داخل bgm */}
         <div className="text_heder_main">
           <h1>راه حل های قدرتمند دیجیتال با</h1>
           <p>KASUKA</p>
           <p>ما تیمی از بازاریابان با استعداد دیجیتال هستیم</p>
           <div className='cart'>
-            <CartHeder 
-             {...cartItems[0]}>  </CartHeder>
-             
-            <CartHeder
-             {...cartItems[1]}
-           />
-            <CartHeder
-             {...cartItems[2]}
-            />
-            <CartHeder 
-             {...cartItems[3]}
-          />
+            {cartItems.map((item, index) => (
+              <CartHeder key={index} {...item} />
+            ))}
           </div>
         </div>
       </div>
-      <div className="overlay"></div>
     </div>
   );
+  
 }
 
 export default HeaderMain;

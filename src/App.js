@@ -5,6 +5,7 @@ import About from './about/about';
 import Slider from './slider-logo/slider-logo';
 import Features from './features/features';
 import Services from './Services/Services';
+import Attraction from './call-of-attraction/Call-of-attraction';
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
       <Slider/>
       <Features/>
       <Services/>
+      <Attraction/>
+
 
     </div>
   );

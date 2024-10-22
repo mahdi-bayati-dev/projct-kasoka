@@ -5,12 +5,17 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    
   }
   
   .bgm {
     width: 100%;
     height: 100%;
     position: relative;
+    background-image: url("/public/img_heder/img_hader.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* ثابت کردن پس‌زمینه */
   }
   
   .img-header-main {
@@ -21,7 +26,10 @@
     top: 0;
     left: 0;
     z-index: -2;
+      opacity: 0.8; 
   }
+  
+  
   
   .overlay {
     position: absolute;
@@ -29,9 +37,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: -1;
-  }
+    background-color: rgba(0, 0, 0, 0.7); /* این مقدار رنگ تیره با شفافیت 0.7 را اعمال می‌کند */
+    z-index: 1;
+}
+
   
   .text_heder_main {
     position: absolute;
@@ -42,6 +51,7 @@
     text-align: center;
     width: 100%;
     line-height:1.2;
+    z-index: 2;
   }
   
   .text_heder_main h1 {
