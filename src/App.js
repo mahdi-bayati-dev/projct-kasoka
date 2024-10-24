@@ -6,6 +6,7 @@ import Slider from './slider-logo/slider-logo';
 import Features from './features/features';
 import Services from './Services/Services';
 import Attraction from './call-of-attraction/Call-of-attraction';
+import ExampleWork from './Example-of-work/Example';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Features/>
       <Services/>
       <Attraction/>
+      <ExampleWork/>
 
 
     </div>

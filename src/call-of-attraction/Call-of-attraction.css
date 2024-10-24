@@ -1,7 +1,7 @@
 .container_Attraction {
     position: relative;
     width: 100%;
-    height: 40%;
+    height: 50%;
     overflow: hidden;
 }
 
@@ -19,16 +19,19 @@
     align-items: center;
     text-align: center;
     color: #fff;
-    padding: 0 20px;
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Increase opacity for a darker effect */
+    z-index: 1;
 }
 
-.overlay {
+
+.overlay_att {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Increase opacity for a darker effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Increase opacity for a darker effect */
     z-index: -1;
 }
 
@@ -52,6 +55,7 @@
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    border-radius: .5rem;
 }
 
 .container_Attraction_bgm button:hover {

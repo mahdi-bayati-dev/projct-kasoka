@@ -1,0 +1,71 @@
+.containerExample {
+    margin: 4rem;
+}
+.containerExample p{
+    opacity: .8;
+    font-size: 1.5rem;
+}
+.containerExample h2{
+    font-size: 2rem;
+
+}
+.btnFilter {
+    margin: 3rem;
+    text-align: center;
+}
+.btnFilter button.active {
+    background-color: gold;
+    border-radius: 0.5rem;
+}
+
+.btnFilter button {
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    margin: .5rem;
+    font-family: inherit;
+    background-color: #fff;
+    border: none;
+    cursor: pointer; /* اضافه کردن cursor برای نشان دادن قابلیت کلیک */
+    transition: background-color 0.3s, border-radius 0.3s; /* اضافه کردن transition برای انیمیشن نرم */
+}
+
+.btnFilter button:hover {
+    background-color: gold;
+    border-radius: 0.5rem;
+}
+
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+/* برای صفحات با عرض کمتر از 1200px */
+@media (max-width: 1200px) {
+    .product {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* برای صفحات با عرض کمتر از 900px */
+@media (max-width: 900px) {
+    .product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* برای صفحات با عرض کمتر از 600px */
+@media (max-width: 600px) {
+    .product {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* برای فاصله‌گذاری بهتر در صفحات کوچک */
+@media (max-width: 768px) {
+    .containerExample {
+        margin: 2rem;
+    }
+}
