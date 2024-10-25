@@ -53,3 +53,14 @@ a {
     width: 100%;
     height: auto;
 }
+.cart_link {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+}
+
+.cart_link:hover {
+    color: gold;
+}

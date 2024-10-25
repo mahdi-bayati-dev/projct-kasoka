@@ -12,13 +12,12 @@ function CartHeader({ svg, text, delay}) {
                 <div className="svg">
                     {svg}
                 </div>
-                <a href="#">{text}</a>
-                
+                <a href="#" className="cart_link">{text}</a>
             </div>
-            
         </div>
     );
 }
+
 
 
 export default CartHeader
