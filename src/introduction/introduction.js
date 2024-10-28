@@ -24,13 +24,13 @@ function Introduction() {
         <div className="introduction_item">
           <div className="introducti_item_dev">
             <EmojiEvents sx={iconStyle} />
-            <span>{inView && <CountUp end={15} duration={2} />}+</span>
+            <span className="count">{inView && <CountUp end={15} duration={2} />}+</span>
             <p>جوایز معتبر ملی و بین‌المللی در زمینه نوآوری و کیفیت خدمات، گواهی بر تعهد ما به برتری در صنعت</p>
           </div>
 
           <div className="introducti_item_dev">
             <WorkHistory sx={iconStyle} />
-            <span>{inView && <CountUp end={12} duration={2} />}</span>
+            <span className="count">{inView && <CountUp end={12} duration={2} />}</span>
             <p>سال تجربه مستمر در ارائه خدمات برتر، همراه با رشد و یادگیری مداوم و ایجاد ارزش افزوده برای مشتریان</p>
           </div>
         </div>
@@ -38,13 +38,13 @@ function Introduction() {
         <div className="introduction_item">
           <div className="introducti_item_dev">
             <Architecture sx={iconStyle} />
-            <span>{inView && <CountUp end={250} duration={2} />}+</span>
+            <span className="count">{inView && <CountUp end={250} duration={2} />}+</span>
             <p>پروژه موفق تکمیل شده با بالاترین استانداردهای کیفی و رضایت مشتریان، نشان دهنده تخصص و تعهد تیم ما</p>
           </div>
 
           <div className="introducti_item_dev">
             <Psychology sx={iconStyle} />
-            <span>{inView && <CountUp end={1000} duration={2} />}+</span>
+            <span calssName="cont">{inView && <CountUp end={1000} duration={2} />}+</span>
             <p>مشتری راضی که به ما اعتماد کرده‌اند و گواه تعهد ما به ارائه بهترین خدمات و پشتیبانی مستمر هستند</p>
           </div>
         </div>

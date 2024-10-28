@@ -13,7 +13,7 @@
     width: 100%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   }
   
   .introduction_text {
@@ -43,7 +43,7 @@
     margin-bottom: 1rem;
   }
   
-  .introducti_item_dev {
+  .introduction_item_dev { /* اصلاح نام کلاس */
     flex: 1;
     text-align: center;
     padding: 2rem;
@@ -52,20 +52,18 @@
     border: 2px solid transparent;
   }
   
-
-  
-  .introducti_item_dev span {
-    /* display: block; */
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin: 1rem 0;
-    color: #2c3e50;
+  .introduction_item span {
+    font-size: 3rem; /* اندازه بزرگتر برای اعداد */
+    font-weight: bold; /* بولد کردن */
+    color: gold; /* رنگ طلایی */
     background: linear-gradient(45deg, #FFD700, #FFA500);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
+
   
-  .introducti_item_dev p {
+  
+  .introduction_item_dev p { /* اصلاح نام کلاس */
     color: #34495e;
     font-size: 1rem;
     line-height: 1.6;
