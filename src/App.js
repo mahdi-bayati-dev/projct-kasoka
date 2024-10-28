@@ -7,6 +7,7 @@ import Features from './features/features';
 import Services from './Services/Services';
 import Attraction from './call-of-attraction/Call-of-attraction';
 import ExampleWork from './Example-of-work/Example';
+import Introduction from './introduction/introduction';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Services/>
       <Attraction/>
       <ExampleWork/>
+      <Introduction/>
 
 
     </div>
