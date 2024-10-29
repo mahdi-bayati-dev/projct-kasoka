@@ -8,6 +8,8 @@ import Services from './Services/Services';
 import Attraction from './call-of-attraction/Call-of-attraction';
 import ExampleWork from './Example-of-work/Example';
 import Introduction from './introduction/introduction';
+import Testimonials from './testimonials/testimonials';
+import Team from './team/team';
 
 
 function App() {
@@ -22,6 +24,11 @@ function App() {
       <Attraction/>
       <ExampleWork/>
       <Introduction/>
+      <Testimonials/>
+      <Team/>
+      
+
+      
 
 
     </div>

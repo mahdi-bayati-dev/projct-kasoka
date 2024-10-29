@@ -1,0 +1,63 @@
+.testimonials_container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Testimonials_section {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-image: url('/public/testimonials_img/img_1.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Testimonials_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* عدد 0.5 میزان شفافیت رو مشخص میکنه */
+}
+.img_person {
+    width: 72px;  /* اندازه دلخواه */
+    height: 72px; /* اندازه دلخواه */
+    border-radius: 50%;
+    object-fit: cover; /* برای حفظ تناسب تصویر */
+    border: 3px solid #ffd700;
+}
+
+
+
+
+
+.testimonials_person_item {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.testimonials_person_item h3 {
+    margin: 15px 0 5px;
+    color: #fff;
+}
+
+.testimonials_person_item span {
+    display: block;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.testimonials_person_item p {
+    color: #fff;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+}
