@@ -1,13 +1,14 @@
 .testimonials_container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    margin-bottom: 3rem;
 }
 
 .Testimonials_section {
     position: relative;
     width: 100%;
-    height: 50%;
+    height: 60%;
     background-image: url('/public/testimonials_img/img_1.jpeg');
     background-attachment: fixed;
     background-position: center;
@@ -42,6 +43,7 @@
     text-align: center;
     padding: 20px;
     transition: all 0.5s ease-in-out;
+    
 }
 
 .testimonials_person_item h3 {
