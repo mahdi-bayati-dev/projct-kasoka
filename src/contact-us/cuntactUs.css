@@ -1,0 +1,89 @@
+.contactUs_container {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contactUs_title {
+    margin-bottom: 50px;
+}
+
+.contactUs_map {
+    margin-bottom: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contactUs_text_address {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    
+}
+
+.contactUs_address {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #f8f9fa;
+    padding-right: 30px;
+    border-radius: 10px;
+    
+    
+}
+
+.address_item {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+.address_info {
+    margin-left: 10px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.contactUs_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name_email {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+.contactUs_btn{
+width: 200px;
+height: 50px;
+margin: 0 auto;
+background-color: gold;
+border-radius: .5rem;
+border: none;
+}
+
+.address_icon {
+    
+    background-color: gold;
+    width: 3rem !important;
+    height: 3rem !important;
+    border-radius: .5rem;
+    
+}

@@ -10,6 +10,7 @@ import ExampleWork from './Example-of-work/Example';
 import Introduction from './introduction/introduction';
 import Testimonials from './testimonials/testimonials';
 import Team from './team/team';
+import ContactUs from './contact-us/contactUs';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Introduction/>
       <Testimonials/>
       <Team/>
+      <ContactUs/>
       
 
       

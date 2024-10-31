@@ -15,26 +15,26 @@ function NavBar() {
     const [reputePassword, setReputePassword] = useState('');
     const [number, setNumber] = useState('');
 
-    // const handleSubmit = (event) => {
-    //     event.preventDefault();
+    const handleSubmit = (event) => {
+        event.preventDefault();
 
-    //     let userValue = {
-    //         name,
-    //         email,
-    //         password,
-    //         reputePassword,
-    //         number
-    //     };
+        let userValue = {
+            name,
+            email,
+            password,
+            reputePassword,
+            number
+        };
         
-    //     fetch('https://test-programing-7c8bd-default-rtdb.firebaseio.com/users.json', {
-    //         method: 'POST',
-    //         body: JSON.stringify(userValue)
-    //     })
-    //     .then(res => {
-    //         console.log(res);
-    //         setShow(false); // بستن مودال بعد از ارسال موفق
-    //     });
-    // };
+        fetch('', {
+            method: 'POST',
+            body: JSON.stringify(userValue)
+        })
+        .then(res => {
+            console.log(res);
+            setShow(false); // بستن مودال بعد از ارسال موفق
+        });
+    };
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -137,9 +137,9 @@ function NavBar() {
                         </Form>
                     </Modal.Body>
                 <Modal.Footer>
-                {/* <Button variant="primary" onClick={handleSubmit}>
+                <Button variant="primary" onClick={handleSubmit}>
                     ذخیره تغییرات
-                </Button> */}
+                </Button>
 
 
                 </Modal.Footer>
