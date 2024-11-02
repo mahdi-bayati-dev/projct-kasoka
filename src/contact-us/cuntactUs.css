@@ -24,11 +24,12 @@
 
 .contactUs_address {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     flex-direction: column;
-    background: #f8f9fa;
+    /* background: #f8f9fa; */
     padding-right: 30px;
     border-radius: 10px;
+    gap: 30px;
     
     
 }
@@ -37,6 +38,7 @@
     display: flex;
     align-items: center; 
     margin-bottom: 20px;
+    gap: .8rem;
 }
 
 .address_info {
@@ -80,10 +82,10 @@ border: none;
 }
 
 .address_icon {
-    
     background-color: gold;
-    width: 3rem !important;
-    height: 3rem !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
     border-radius: .5rem;
-    
+    padding: 0.5rem;
+    font-size: 1rem !important;
 }

@@ -11,6 +11,7 @@ import Introduction from './introduction/introduction';
 import Testimonials from './testimonials/testimonials';
 import Team from './team/team';
 import ContactUs from './contact-us/contactUs';
+import Footer from './footer/footer';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Testimonials/>
       <Team/>
       <ContactUs/>
+      <Footer/>
       
 
       

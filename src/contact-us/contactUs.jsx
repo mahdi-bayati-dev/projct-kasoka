@@ -16,6 +16,11 @@ const ContactUs = () => {
         lng: 57.0834
     };
 
+    // استایل مشترک برای همه آیکون‌ها
+    const iconStyle = {
+        fontSize: "20px"  // می‌توانید این مقدار را تغییر دهید
+    };
+
     return (
         <div className="contactUs_container">
             <div className="contactUs_title">
@@ -38,21 +43,21 @@ const ContactUs = () => {
             <div className="contactUs_text_address">
                 <div className="contactUs_address">
                     <div className="address_item">
-                        <LocationOnIcon className="address_icon" />
+                        <LocationOnIcon sx={iconStyle} className="address_icon" />
                         <div className="address_info">
                             <span>مکان:</span>
                             <p>کرمان بلوار سرباز</p>
                         </div>
                     </div>
                     <div className="address_item">
-                        <EmailIcon className="address_icon" />
+                        <EmailIcon sx={iconStyle} className="address_icon" />
                         <div className="address_info">
                             <span>ایمیل:</span>
                             <p>mbyaty01@gmail.com</p>
                         </div>
                     </div>
                     <div className="address_item">
-                        <PhoneIcon className="address_icon" />
+                        <PhoneIcon sx={iconStyle} className="address_icon" />
                         <div className="address_info">
                             <span>تماس:</span>
                             <p>09014367323</p>
