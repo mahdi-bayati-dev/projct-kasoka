@@ -22,6 +22,7 @@ const ContactUs = () => {
     };
 
     return (
+        <section id="contact">
         <div className="contactUs_container">
             <div className="contactUs_title">
                 <p>تماس با ما</p>
@@ -76,6 +77,7 @@ const ContactUs = () => {
                 </div>
             </div>
         </div>
+        </section>
     );
 };
 

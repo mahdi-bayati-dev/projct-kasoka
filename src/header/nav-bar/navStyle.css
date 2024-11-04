@@ -49,10 +49,6 @@
     color: gold;
 }
 
-.main_nav {
-    display: flex;
-}
-
 .ul_menu_header {
     display: flex;
     list-style: none;
@@ -80,6 +76,9 @@
     display: none;
     flex-direction: column;
     cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 5px;
 }
 
 .menu_toggle span {
@@ -90,44 +89,75 @@
     transition: 0.4s;
 }
 
-/* modal */
-.modal .modal-header {
-    background-color: #f8f9fa;
-    border-bottom: 2px solid gold;
+@media (max-width: 768px) {
+    .nav_content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo_start {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .menu_toggle {
+        display: flex;
+    }
+
+    .ul_menu_header {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .ul_menu_header.open {
+        display: flex;
+    }
+
+    .menu_toggle.open span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu_toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu_toggle.open span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+/* اضافه کردن این استایل‌ها به فایل CSS موجود */
+
+.menu_toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: gold; /* تغییر رنگ آیکون همبرگری به طلایی */
+    margin: 2px 0;
+    transition: 0.4s;
 }
 
-.modal .modal-title {
-    color: #333;
-    font-weight: bold;
+@media (max-width: 768px) {
+    .ul_menu_header.open {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.9); /* پس‌زمینه تیره برای منوی باز شده */
+        border: 1px solid gold; /* حاشیه طلایی */
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .ul_menu_header li a {
+        color: gold; /* تغییر رنگ متن لینک‌ها به طلایی */
+        display: block;
+        padding: 0.8rem;
+        width: 100%;
+    }
+
+    .ul_menu_header li a:hover {
+        background-color: rgba(255, 215, 0, 0.1); /* افکت هاور با پس‌زمینه طلایی کمرنگ */
+    }
 }
 
-.modal .modal-body {
-    padding: 20px;
-}
-
-.modal .form-label {
-    color: #555;
-    font-weight: bold;
-}
-
-.modal .form-control {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 8px;
-}
-
-.modal .form-control:focus {
-    border-color: gold;
-    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
-}
-
-.modal .btn-primary {
-    background-color: gold;
-    border-color: gold;
-    color: #333;
-}
-
-.modal .btn-primary:hover {
-    background-color: #ffd700;
-    border-color: #ffd700;
-}

@@ -30,6 +30,7 @@ function Team() {
     ];
 
     return ( 
+        <section id="team">
         <div className="team_container">
             <span>تیم ما</span>
             <h2>تیم ما را بررسی کنید</h2>
@@ -47,6 +48,7 @@ function Team() {
                 ))}
             </div>
         </div>
+        </section>
     );
 }
 

@@ -89,3 +89,9 @@ border: none;
     padding: 0.5rem;
     font-size: 1rem !important;
 }
+@media (max-width: 505px) {
+    .contactUs_text_address {
+        grid-template-columns: 1fr; /* تغییر به چیدمان تک‌ستونی */
+        gap: 20px; /* تنظیم فاصله در صورت نیاز */
+    }
+}

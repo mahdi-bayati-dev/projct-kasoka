@@ -9,6 +9,7 @@ function About() {
     }, []);
 
     return (
+        <section id="about">
         <div className='about_container'>
             <div className={`about_text ${animate ? 'animate' : ''}`}>
                 <h2>شرکت ما</h2>
@@ -29,6 +30,7 @@ function About() {
                 <img src="./img_about/about.jpg" alt="تصویر شرکت نوآد" />
             </div>
         </div>
+        </section>
     )
 }
 

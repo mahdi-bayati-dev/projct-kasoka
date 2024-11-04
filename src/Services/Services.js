@@ -44,6 +44,7 @@ function Services() {
     }, []);
 
     return(
+      <section id="services">
         <div className={`services-wrapper ${animate ? 'animate' : ''}`}>
             <div className="container_serves">
                 <h4 className="text_serves_1">خدمات</h4>
@@ -60,6 +61,7 @@ function Services() {
                 ))}
             </div>
         </div>
+        </section>
     )
 }
 
