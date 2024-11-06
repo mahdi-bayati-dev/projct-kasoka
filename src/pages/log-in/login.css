@@ -1,4 +1,3 @@
-
 .login-page {
     min-height: 100vh;
     display: flex;
@@ -9,20 +8,23 @@
     overflow: hidden;
     position: relative;
 }
-.btn_login{
-    position:absolute;
+
+.btn_login {
+    position: absolute;
     z-index: 2;
 }
-.btn_back_home_login{
-  border: none;
-  background-color: #0d6efd;
-  color: #fff;
-  padding: .8rem 2rem;
-  border-radius: .5rem;
-  margin: 1rem;
+
+.btn_back_home_login {
+    border: none;
+    background-color: #0d6efd;
+    color: #fff;
+    padding: .8rem 2rem;
+    border-radius: .5rem;
+    margin: 1rem;
 }
+
 .login_page_container {
-    max-height: 570px; /* ارتفاع کاهش یافته */
+    max-height: 570px;
     margin-top: 20px;
     width: 100%;
     max-width: 1200px;
@@ -34,9 +36,8 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* فرم به سمت راست صفحه منتقل شود */
+    justify-content: flex-start;
     padding: 2rem;
-    
 }
 
 .login_form {
@@ -49,6 +50,17 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
+.password-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.password-container .mb-3 {
+    flex: 1;
+    margin-bottom: 0 !important;
+}
+
 .login_form h2 {
     text-align: center;
     margin-bottom: 2rem;
@@ -58,7 +70,7 @@
 .form-control {
     margin-bottom: 1rem;
     padding: 0.75rem;
-    width: 100%; /* اطمینان از اینکه فیلدها عرض 100% ظرف خود را اشغال کنند */
+    width: 100%;
 }
 
 .btn-primary {
@@ -76,6 +88,15 @@
     .login_form {
         width: 100%;
         padding: 1.5rem;
+    }
+
+    .password-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .password-container .mb-3 {
+        margin-bottom: 1rem !important;
     }
 }
 

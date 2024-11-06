@@ -1,122 +1,3 @@
-// import React, { useState } from "react";
-// import Button from "react-bootstrap/Button";
-// import Form from "react-bootstrap/Form";
-// import "./login.css";
-// import { Link } from "react-router-dom";
-
-
-// function LoginPage() {
-//   const [formData, setFormData] = useState({
-//     name: "",
-//     email: "",
-//     password: "",
-//     reputePassword: "",
-//     number: ""
-//   });
-
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFormData(prevState => ({
-//       ...prevState,
-//       [name]: value
-//     }));
-//   };
-
-//   const handleSubmit = async (event) => {
-//     event.preventDefault();
-//     try {
-//       const response = await fetch("YOUR_API_ENDPOINT", {
-//         method: "POST",
-//         headers: {
-//           "Content-Type": "application/json"
-//         },
-//         body: JSON.stringify(formData)
-//       });
-//       const data = await response.json();
-//       console.log(data);
-//     } catch (error) {
-//       console.error("Error submitting form:", error);
-//     }
-//   };
-
-//   return (
-//     <>
-//     <div className="btn_login">
-//     <Link to={'./'}><button className="btn_back_home_login">خانه</button></Link>
-//     </div>
-//     <div className="login-page">
-      
-//       <div className="login_page_container">
-//         <div className="login_form">
-          
-//           <Form onSubmit={handleSubmit}>
-//             <Form.Group className="mb-1">
-//               <Form.Label>نام و نام خانوادگی</Form.Label>
-//               <Form.Control
-//                 type="text"
-//                 name="name"
-//                 value={formData.name}
-//                 onChange={handleChange}
-//                 required
-//               />
-//             </Form.Group>
-
-//             <Form.Group className="mb-3">
-//               <Form.Label>آدرس ایمیل</Form.Label>
-//               <Form.Control
-//                 type="email"
-//                 name="email"
-//                 value={formData.email}
-//                 onChange={handleChange}
-//                 required
-//               />
-//             </Form.Group>
-
-//             <Form.Group className="mb-3">
-//               <Form.Label>رمز عبور</Form.Label>
-//               <Form.Control
-//                 type="password"
-//                 name="password"
-//                 value={formData.password}
-//                 onChange={handleChange}
-//                 required
-//               />
-//             </Form.Group>
-
-//             <Form.Group className="mb-3">
-//               <Form.Label>تکرار رمز عبور</Form.Label>
-//               <Form.Control
-//                 type="password"
-//                 name="reputePassword"
-//                 value={formData.reputePassword}
-//                 onChange={handleChange}
-//                 required
-//               />
-//             </Form.Group>
-
-//             <Form.Group className="mb-3">
-//               <Form.Label>شماره موبایل</Form.Label>
-//               <Form.Control
-//                 type="tel"
-//                 name="number"
-//                 value={formData.number}
-//                 onChange={handleChange}
-//                 required
-//               />
-//             </Form.Group>
-
-//             <Button variant="primary" type="submit">
-//               ثبت نام
-//             </Button>
-//           </Form>
-//         </div>
-//       </div>
-//     </div>
-//     </>
-//   );
-// }
-
-// export default LoginPage;
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -138,28 +19,23 @@ function LoginPage() {
   const validateForm = () => {
     const newErrors = {};
     
-    // Name validation
     if (formData.name.length < 3) {
       newErrors.name = "نام باید حداقل 3 کاراکتر باشد";
     }
 
-    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       newErrors.email = "ایمیل معتبر نیست";
     }
 
-    // Password validation
     if (formData.password.length < 6) {
       newErrors.password = "رمز عبور باید حداقل 6 کاراکتر باشد";
     }
 
-    // Password match validation
     if (formData.password !== formData.reputePassword) {
       newErrors.reputePassword = "رمز عبور مطابقت ندارد";
     }
 
-    // Phone number validation
     const phoneRegex = /^(\+98|0)?9\d{9}$/;
     if (!phoneRegex.test(formData.number)) {
       newErrors.number = "شماره موبایل معتبر نیست";
@@ -196,9 +72,8 @@ function LoginPage() {
       const data = await response.json();
       
       if (response.ok) {
-        // Save token or user data to localStorage if needed
         localStorage.setItem('user', JSON.stringify(data));
-        navigate('/dashboard'); // Redirect to dashboard after successful login
+        navigate('/dashboard');
       } else {
         setErrors({ submit: data.message || 'خطا در ورود به سیستم' });
       }
@@ -246,35 +121,37 @@ function LoginPage() {
                 </Form.Control.Feedback>
               </Form.Group>
 
-              <Form.Group className="mb-3">
-                <Form.Label>رمز عبور</Form.Label>
-                <Form.Control
-                  type="password"
-                  name="password"
-                  value={formData.password}
-                  onChange={handleChange}
-                  isInvalid={!!errors.password}
-                  required
-                />
-                <Form.Control.Feedback type="invalid">
-                  {errors.password}
-                </Form.Control.Feedback>
-              </Form.Group>
+              <div className="password-container">
+                <Form.Group className="mb-3">
+                  <Form.Label>رمز عبور</Form.Label>
+                  <Form.Control
+                    type="password"
+                    name="password"
+                    value={formData.password}
+                    onChange={handleChange}
+                    isInvalid={!!errors.password}
+                    required
+                  />
+                  <Form.Control.Feedback type="invalid">
+                    {errors.password}
+                  </Form.Control.Feedback>
+                </Form.Group>
 
-              <Form.Group className="mb-3">
-                <Form.Label>تکرار رمز عبور</Form.Label>
-                <Form.Control
-                  type="password"
-                  name="reputePassword"
-                  value={formData.reputePassword}
-                  onChange={handleChange}
-                  isInvalid={!!errors.reputePassword}
-                  required
-                />
-                <Form.Control.Feedback type="invalid">
-                  {errors.reputePassword}
-                </Form.Control.Feedback>
-              </Form.Group>
+                <Form.Group className="mb-3">
+                  <Form.Label>تکرار رمز عبور</Form.Label>
+                  <Form.Control
+                    type="password"
+                    name="reputePassword"
+                    value={formData.reputePassword}
+                    onChange={handleChange}
+                    isInvalid={!!errors.reputePassword}
+                    required
+                  />
+                  <Form.Control.Feedback type="invalid">
+                    {errors.reputePassword}
+                  </Form.Control.Feedback>
+                </Form.Group>
+              </div>
 
               <Form.Group className="mb-3">
                 <Form.Label>شماره موبایل</Form.Label>
