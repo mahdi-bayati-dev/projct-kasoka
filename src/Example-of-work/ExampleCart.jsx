@@ -1,7 +1,9 @@
+// src/ExampleCart.js
 import React from "react";
-import './ExampleStyle.css'
+import { Link } from "react-router-dom";
+import './ExampleStyle.css';
 
-function ProductCart({ name, price, duration, users, features }) {
+function ProductCart({ id, name, price, duration, users, features }) {
     return (
         <div className="plan">
             <div className="inner">
@@ -25,9 +27,9 @@ function ProductCart({ name, price, duration, users, features }) {
                     ))}
                 </ul>
                 <div className="action">
-                    <a className="button" href="#">
+                    <Link className="button" to={`/product/${id}`}>
                         انتخاب پکیج
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

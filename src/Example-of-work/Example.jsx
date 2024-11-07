@@ -51,6 +51,7 @@ function ExampleWork() {
         {filteredPackages.map((pkg, index) => (
           <ProductCart
             key={index}
+            id={pkg.id}
             name={pkg.name}
             price={pkg.price}
             duration={pkg.duration}

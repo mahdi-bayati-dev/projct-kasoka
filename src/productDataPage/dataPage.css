@@ -1,0 +1,148 @@
+.productPage_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.img_productPage {
+    margin: 3rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.productPage_text {
+    margin: 3rem;
+    flex: 1;
+}
+
+.productPage_text h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.productPage_text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.productPage_text ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.description_product_page {
+    margin-top: 2rem;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.price_product_page {
+    font-size: 1.25rem;
+    color: #2c5282;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.time_product_page {
+    color: #4a5568;
+    margin: 0.5rem 0;
+}
+
+.user_product_page {
+    color: #4a5568;
+    margin: 0.5rem 0;
+}
+
+.text_left {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f7fafc;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.text_left span {
+    font-size: 1.5rem;
+    color: #2d3748;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.img_productPage img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.img_productPage img:hover {
+    transform: scale(1.02);
+}
+.productPage_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* سایر استایل‌های قبلی حفظ شوند */
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .productPage_container {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .description_product_page {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productPage_container {
+        flex-direction: column-reverse;
+    }
+    
+    .img_productPage {
+        margin: 1rem;
+    }
+    
+    .productPage_text {
+        margin: 1rem;
+    }
+    
+    .img_productPage img {
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text_left span {
+        font-size: 1.2rem;
+    }
+    
+    .productPage_text h1 {
+        font-size: 1.5rem;
+    }
+    
+    .description_product_page {
+        font-size: 0.9rem;
+    }
+}

@@ -2,8 +2,8 @@
 import React from 'react';
 import './heder_main_style.css';
 import CartHeder from '../heder_cart/heder_cart';
-import { Link, useNavigate } from 'react-router-dom';
-import Chart from '../../pages/Chart/Chart';
+import { useNavigate } from 'react-router-dom';
+
 
 
 function HeaderMain() {
