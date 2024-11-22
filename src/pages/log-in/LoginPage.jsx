@@ -18,7 +18,7 @@ function LoginPage() {
 
   const validateForm = () => {
     const newErrors = {};
-    
+
     if (formData.name.length < 3) {
       newErrors.name = "نام باید حداقل 3 کاراکتر باشد";
     }
@@ -55,7 +55,7 @@ function LoginPage() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    
+
     if (!validateForm()) {
       return;
     }
@@ -70,7 +70,7 @@ function LoginPage() {
       });
 
       const data = await response.json();
-      
+
       if (response.ok) {
         localStorage.setItem('user', JSON.stringify(data));
         navigate('/dashboard');

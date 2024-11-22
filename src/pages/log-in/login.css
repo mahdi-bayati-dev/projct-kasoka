@@ -1,3 +1,5 @@
+
+
 .login-page {
     min-height: 100vh;
     display: flex;
@@ -29,9 +31,9 @@
     width: 100%;
     max-width: 1200px;
     background-image: url('../../../public/img-bgm_login/21303.jpg');
-    background-size: contain;
+    background-size: cover; /* برای پوشاندن کل پس‌زمینه */
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center; /* موقعیت مرکزی تصویر */
     border-radius: 1rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -43,7 +45,7 @@
 .login_form {
     width: 100%;
     max-width: 400px;
-    max-height: 540px;
+    max-height: 600px;
     background-color: rgba(255, 255, 255, 0.95);
     padding: 2.5rem;
     border-radius: 1rem;
@@ -82,7 +84,8 @@
 
 @media (max-width: 768px) {
     .login_page_container {
-        padding: 1rem;
+        padding: 0rem;
+        
     }
 
     .login_form {
